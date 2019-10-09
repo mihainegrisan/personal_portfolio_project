@@ -103,6 +103,22 @@ nav
     margin: 0 auto
     margin-bottom: 3rem
 
+  a
+    p::before,
+    p::after
+      content: ""
+      color: $main-gray
+      transition: color 0.4s ease-out
+
+    &:hover
+
+      p::before
+        content: "< "
+        color: $main-red
+      p::after
+        content: " />"
+        color: $main-red
+
 .projects-header
   max-width: 640px
   margin: 0 auto 6rem auto

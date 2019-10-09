@@ -98,6 +98,20 @@ nav ul a:hover {
   margin: 0 auto;
   margin-bottom: 3rem;
 }
+#work a p::before,
+#work a p::after {
+  content: "";
+  color: #303841;
+  transition: color 0.4s ease-out;
+}
+#work a:hover p::before {
+  content: "< ";
+  color: #BE3144;
+}
+#work a:hover p::after {
+  content: " />";
+  color: #BE3144;
+}
 
 .projects-header {
   max-width: 640px;
